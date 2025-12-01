@@ -1,0 +1,2 @@
+def Ter():
+	print("TErminos")
