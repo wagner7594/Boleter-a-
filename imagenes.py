@@ -1,7 +1,7 @@
 import os
 from PIL import Image, ImageTk
 import tkinter as tk
-
+# esta funcion es para crear el canvas con un fondo desde culquier ventana
 def imagen(ventana, nombre_imagen, ancho, alto):
     canvas = tk.Canvas(ventana, highlightthickness=0)
     canvas.pack(fill="both", expand=True)

@@ -2,6 +2,48 @@ import tkinter as tk
 
 from imagenes import imagen
 from botones import crear_botones,boton_ventana
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pagina de reseñassss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 resenas=None
 def Re(ventana):
 	global resenas

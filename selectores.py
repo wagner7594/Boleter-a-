@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-
+#este es un modulo de prueba que son selectores
 
 def elegir(canvas,ubicacion,enx,eny,opcion1,opcion2):
     

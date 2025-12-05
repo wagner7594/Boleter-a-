@@ -7,24 +7,29 @@ from tkinter import messagebox
 import asyncio
 import time
 
-
+#correo y contra que usamos de remitente
 miemail = "User2442E@gmail.com"
 micontra = "skhf cwfc yclf fhzl"
 
+
+#variables globales que usamos
 funciono=None
 correo_usar=None
 codigo=None
 ventana_usar=None
-def verificando(correo,stringvar,ventana,bloquedespues):
 
+
+#funcion principal de verificar,crea el numero random y verifica la estructura de correo
+def verificando(correo,stringvar,ventana,bloquedespues):
 	global funciono,correo_usar,codigo,ventana_usar
 	ventana_usar=ventana
 	correo_usar=correo
 
+
 	if not correo or "@" not in correo:
 		messagebox.showerror("ERROR", "Debe ingresar un email válido",parent=ventana_usar)
 		stringvar.set("")
-		return
+		return codigo
 
 	codigo = str(random.randint(100000, 999999))
 	print(codigo)
@@ -39,8 +44,10 @@ def verificando(correo,stringvar,ventana,bloquedespues):
 	else:
 		messagebox.showerror("Error","El correo no es válido",parent=ventana_usar)
 	
+	
 
-
+#funcion que envia el email, si hay un error aqui es porque el email no existe o las entradas de mensajeria email de tu computador
+#estan bloqueadas y no sirve la entradasss de envio de correo, prueba con puesto 2525 o el 465 pero no con el 25 despues nos ven como spam
 def enviar_email():
 	global miemail,micontra,funciono,correo_usar,codigo
 
@@ -67,9 +74,10 @@ def enviar_email():
 	except Exception as e:
 		print(f"Error enviando email: {e}")
 		funciono=False
+
 		print("falseee")
 
-
+#esto es para outlook cambiar el puerto aqui tambien si no funciona arriba, es lo mismo pero para correos microsoft
 def enviar_email_outl():
 	global miemail,micontra,funciono,correo_usar,codigo
 

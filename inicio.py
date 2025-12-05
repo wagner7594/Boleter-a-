@@ -1,12 +1,12 @@
 import tkinter as tk
 
-
+#modulos de canvas,botones,textos
 from imagenes import imagen
 from botones import crear_botones,boton_ventana
 from textos import text
 
 
-
+#ventana inicial con la cual empezamos al ejecutar por main
 presentacion=None
 
 def inicial(ventana=None):
@@ -27,21 +27,21 @@ def inicial(ventana=None):
 
 		canvas = imagen(presentacion,"fondo_principal.jpg",1079,720)
 
-		text(canvas,535,280,"BIENVENIDOS","white",20,"center")
+		texto_bienvenida=text(canvas,535,280,"BIENVENIDOS","white",20,"center")
 
 		#boton registrarse
-		boton_ventana("Registrarse",canvas,535,345,18,"#033F65","#FA8911",presentacion,"registro")
+		boton_registrarse=boton_ventana("Registrarse",canvas,535,345,18,"#033F65","#FA8911",presentacion,"registro")
 
 		#boton iniciar sesion
-		boton_ventana("Iniciar Sesion",canvas,535,437,18,"#033F65","#FA8911",presentacion,"inicio_sesion")
+		boton_login=boton_ventana("Iniciar Sesion",canvas,535,437,18,"#033F65","#FA8911",presentacion,"inicio_sesion")
 		
 
 		#boton de terminos
-		boton_ventana("Terminos",canvas,450,543,18,"#033F65","#FA8911",presentacion,"terminos")
+		boton_terminos=boton_ventana("Terminos",canvas,450,543,18,"#033F65","#FA8911",presentacion,"terminos")
 	
 
 		#boton de reseñas
-		boton_ventana("Reseñas",canvas,630,543,18,"#033F65","#FA8911",presentacion,"reseñas")
+		boton_rese=boton_ventana("Reseñas",canvas,630,543,18,"#033F65","#FA8911",presentacion,"reseñas")
 
 
 

@@ -5,6 +5,11 @@ from imagenes import imagen
 
 
 from selectores import elegir
+
+
+
+#este es una pag de terminos 
+
 terminos=None
 def Ter(ventana):
 	global terminos

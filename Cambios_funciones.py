@@ -1,5 +1,6 @@
 
-
+#esta funcion sirve para cambiar de ventanas es el finalizador del 
+#intermediario que es intermedio.py
 
 def cambio(ventana,texto):
 	if texto.lower()=="registro":

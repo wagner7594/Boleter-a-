@@ -1,5 +1,5 @@
 import tkinter as tk
-
+#modulos
 from botones import crear_botones,boton_ventana
 from imagenes import imagen
 start=None
@@ -18,4 +18,4 @@ def principel(ventana):
 		start.config(bg="gray10")
 
 		canvas = imagen(start,"autobus.jpg",1079,720)
-		boton_ventana("Cerrar sesion",canvas,700,460,18,"white","#00BFFF",start,"inicio")
+		boton_cerrar_se=boton_ventana("Cerrar sesion",canvas,700,460,18,"white","#00BFFF",start,"inicio")
