@@ -34,8 +34,7 @@ def verificando(correo,stringvar,ventana,bloquedespues):
 	hilo.join()
 
 	if funciono:
-		messagebox.showinfo("Excelente","Accedio correctamente",parent=ventana_usar)
-		bloquedespues.pack()
+		bloquedespues.place(x=500,y=600)
 		return codigo
 	else:
 		messagebox.showerror("Error","El correo no es válido",parent=ventana_usar)
